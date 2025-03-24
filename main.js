@@ -1,0 +1,16 @@
+window.addEventListener('DOMContentLoaded' ,getHarryPotter);
+async function getHarryPotter() {
+    const response = await fetch('https://raw.githubusercontent.com/Laboratoria/LIM011-data-lovers/master/src/data/potter/potter.json');
+
+    //console.log(response);//
+    const data = await response.json();
+    console.log(data);
+
+
+   displayHarryPotter(data);
+}
+
+
+function  displayHarryPotter(data_ASD) {
+    console.log(`Data amyádban: ${data_ASD}`);
+}
